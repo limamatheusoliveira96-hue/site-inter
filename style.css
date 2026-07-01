@@ -668,9 +668,6 @@ body {
     transition: 0.3s;
 }
 
-.card-item:hover{
-    transform: translateY(-10px);
-}
 
 .card-item img{
     width: 100%;
