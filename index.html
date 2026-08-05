@@ -340,20 +340,34 @@
              alt="Estudantes">
       </div>
 
+  <div class="container my-5">
+
+  <div class="card shadow-lg border-0" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#formModal">
+
+    <div class="row g-0 align-items-center">
+
+      <!-- Imagem -->
+      <div class="col-md-4">
+        <!-- Removido o width="100px" fixo para a imagem preencher o espaço da coluna corretamente -->
+        <img src="imagem/hero.png" class="img-fluid rounded-start w-100" alt="Estudantes">
+      </div>
+
       <!-- Conteúdo -->
       <div class="col-md-8">
-        <div class="card-body">
+        <div class="card-body p-4">
 
-          <h5 class="card-title fw-bold" style="fonte-size:2 rem;">
+          <!-- fs-3 ou fs-2 aumenta o título -->
+          <h3 class="card-title fw-bold fs-2">
             Compartilhe seu perfil acadêmico 🚀
-          </h5>
+          </h3>
 
-          <p class="card-text text-muted">
+          <!-- fs-5 deixa o texto em um tamanho médio/grande legível -->
+          <p class="card-text text-muted fs-5">
             Clique aqui e preencha seu formulário com suas matérias favoritas, referências e redes sociais.
             Isso ajuda a organizar seu perfil de estudos de forma profissional.
           </p>
 
-          <button class="btn btn-primary mt-3 btn-lg">
+          <button class="btn btn-primary mt-3 btn-lg fs-5">
             Abrir formulário
           </button>
 
@@ -365,8 +379,6 @@
 
 </div>
 
-
-
 <!-- Modal -->
 <div class="modal fade" id="formModal" tabindex="-1">
   <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -374,18 +386,18 @@
 
       <!-- Header -->
       <div class="modal-header">
-        <h5 class="modal-title">Compartilhe seu perfil acadêmico</h5>
+        <h5 class="modal-title fs-4 fw-bold">Compartilhe seu perfil acadêmico</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
       <form action="https://formsubmit.co/lima.matheus.oliveira96@gmail.com" method="POST">
 
-        <div class="modal-body">
+        <div class="modal-body p-4">
 
           <!-- Texto chamativo -->
           <div class="mb-4">
-            <h4 class="fw-bold">Quer fazer parte do nosso portfólio de estudos? 🚀</h4>
-            <p class="text-muted">
+            <h3 class="fw-bold fs-3">Quer fazer parte do nosso portfólio de estudos? 🚀</h3>
+            <p class="text-muted fs-5">
               Preencha o formulário abaixo com suas informações, matérias favoritas e referências.
               Isso ajuda a organizar seus projetos e interesses acadêmicos de forma mais profissional.
             </p>
@@ -395,24 +407,21 @@
 
             <!-- Coluna esquerda -->
             <div class="col-md-6">
+              <!-- form-control-lg deixa os inputs e o texto digitado maiores -->
+              <input type="text" name="Nome" class="form-control form-control-lg mb-3" placeholder="Seu nome completo" required>
 
-              <input type="text" name="Nome" class="form-control mb-3" placeholder="Seu nome completo" required>
+              <input type="email" name="E_mail" class="form-control form-control-lg mb-3" placeholder="Seu e-mail" required>
 
-              <input type="email" name="E_mail" class="form-control mb-3" placeholder="Seu e-mail" required>
-
-              <input type="url" name="Rede_Social" class="form-control mb-3" placeholder="Link da sua rede social">
-
+              <input type="url" name="Rede_Social" class="form-control form-control-lg mb-3" placeholder="Link da sua rede social">
             </div>
 
             <!-- Coluna direita -->
             <div class="col-md-6">
-
-              <textarea name="Materias_prediletas" class="form-control mb-3" rows="3"
+              <textarea name="Materias_prediletas" class="form-control form-control-lg mb-3" rows="3"
                 placeholder="Matérias que você mais gosta (PW1, BD1, PA...)"></textarea>
 
-              <textarea name="Projetos" class="form-control mb-3" rows="4"
+              <textarea name="Projetos" class="form-control form-control-lg mb-3" rows="4"
                 placeholder="Fale sobre seus projetos, ideias ou referências de estudo"></textarea>
-
             </div>
 
           </div>
@@ -425,8 +434,15 @@
 
         <!-- Footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Agora não</button>
-          <button type="submit" class="btn btn-success">ENVIAR</button>
+          <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Agora não</button>
+          <button type="submit" class="btn btn-success btn-lg">ENVIAR</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
 
 
 
